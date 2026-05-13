@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Login</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <main class="page">
+    <form class="card" action="#" method="post" autocomplete="on">
+      <h1 class="card__title">Login</h1>
+
+      <div class="field">
+        <label class="field__label" for="email">Email:</label>
+        <input
+          class="field__input"
+          id="email"
+          name="email"
+          type="email"
+          placeholder="Enter email"
+          required
+        />
+      </div>
+
+      <div class="field">
+        <label class="field__label" for="password">Password:</label>
+        <input
+          class="field__input"
+          id="password"
+          name="password"
+          type="password"
+          placeholder="Enter password"
+          required
+        />
+      </div>
+
+      <label class="checkbox">
+        <input id="show-password" type="checkbox" />
+        <span>Show Password</span>
+      </label>
+
+      <button class="btn-signin" type="submit">SIGN IN</button>
+
+      <footer class="card__footer">
+        <p>
+          Forgot <a href="#">Username / Password</a>?
+        </p>
+        <p>
+          Don't have an account? <a href="#">Sign up</a>
+        </p>
+      </footer>
+    </form>
+  </main>
+  <script src="login.js"></script>
+</body>
+</html>
